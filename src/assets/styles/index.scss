@@ -13,21 +13,12 @@ $secondary-font: Inter;
     src: local('Euclid Circular B'), url('./fonts/EuclidCircularB-Regular.ttf') format('truetype');
   }
   
-  a {
-    font-weight: 500;
-    color: #219653;
-    text-decoration: inherit;
-  }
-  a:hover {
-    color: #219653;
-  }
   
   body {
     margin: 0;
     display: flex;
     place-items: center;
     min-width: 320px;
-    min-height: 100vh;
     font-family: 'Euclid Circular B', sans-serif;
 
     #root{

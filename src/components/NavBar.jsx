@@ -21,6 +21,7 @@ import {
   ModalBody,
   ModalFooter,
   Row,
+  Col,
 } from "reactstrap";
 import { FaSearch, FaBell, FaCaretDown } from "react-icons/fa";
 import { ApiContext } from "../context/apiContext";
@@ -133,43 +134,48 @@ const NavbarComponent = () => {
           <form className="" onSubmit={handleSearchSubmit}>
             <Row>
               <InputGroup className="mb-3">
-                <InputGroupText>Search</InputGroupText>
                 <Input
                   type="text"
-                  placeholder="Search"
+                  placeholder="Search..."
                   value={searchValue}
                   onChange={handleSearchChange}
                 />
               </InputGroup>
             </Row>
-            <Row>
-              <InputGroup className="mb-3">
-                <InputGroupText>Quantity_gt</InputGroupText>
-                <Input
-                  type="number"
-                  name="Quantity_gt"
-                  value={filterValues.Quantity_gt}
-                  onChange={handleFilterChange}
-                />
-              </InputGroup>
-              <InputGroup className="mb-3">
-                <InputGroupText>CostPrice_lt</InputGroupText>
-                <Input
-                  type="number"
-                  name="CostPrice_lt"
-                  value={filterValues.CostPrice_lt}
-                  onChange={handleFilterChange}
-                />
-              </InputGroup>
-              <InputGroup className="mb-3">
-                <InputGroupText>CostPrice_gte</InputGroupText>
-                <Input
-                  type="number"
-                  name="CostPrice_gte"
-                  value={filterValues.CostPrice_gte}
-                  onChange={handleFilterChange}
-                />
-              </InputGroup>
+            <Row className="d-flex">
+              <Col lg={4}>
+                <InputGroup className="mb-3">
+                  <Input
+                    type="number"
+                    name="Quantity_gt"
+                    placeholder="Quantity >"
+                    value={filterValues.Quantity_gt}
+                    onChange={handleFilterChange}
+                  />
+                </InputGroup>
+              </Col>
+              <Col lg={4}>
+                <InputGroup className="mb-3">
+                  <Input
+                    type="number"
+                    name="CostPrice_lt"
+                    placeholder="CostPrice <"
+                    value={filterValues.CostPrice_lt}
+                    onChange={handleFilterChange}
+                  />
+                </InputGroup>
+              </Col>
+              <Col lg={4}>
+                <InputGroup className="mb-3">
+                  <Input
+                    type="number"
+                    name="CostPrice_gte"
+                    placeholder="CostPrice >="
+                    value={filterValues.CostPrice_gte}
+                    onChange={handleFilterChange}
+                  />
+                </InputGroup>
+              </Col>
             </Row>
             <Row>
               <Button type="submit" color="primary">
