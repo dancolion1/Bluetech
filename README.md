@@ -21,8 +21,8 @@ Clone the repository:
 
 sh
 Copy code
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/destinez/blutech.git
+cd blutech
 Install dependencies:
 
 sh
@@ -34,7 +34,7 @@ sh
 Copy code
 npm start
 Usage
-After installing the dependencies and starting the development server, you can access the application at http://localhost:3000. The application includes a navbar with search and filter functionality, and a user dropdown menu.
+After installing the dependencies and starting the development server, you can access the application at http://localhost:5173. The application includes a navbar with search and filter functionality, and a user dropdown menu.
 
 Running Tests
 To run the tests for this project, use the following command:
