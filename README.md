@@ -36,7 +36,7 @@ The data is fetched from the following API endpoint:
 
 1. **Clone the Repository**
    ```sh
-   git clone https://github.com/destinez/blutech.git
+   git clone https://github.com/dancolion1/blutech.git
    cd blutech
 
 2. **Install**
@@ -59,5 +59,5 @@ The data is fetched from the following API endpoint:
 
 ## Authors
 
-- [Obaro Destiny Udurie](https://www.github.com/destinez)
+- OLEABHIELE DANIEL DONALD
 
